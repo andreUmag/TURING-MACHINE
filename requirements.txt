@@ -1,0 +1,7 @@
+# python -m pip install -r requirements.txt
+PyMySQL==1.1.0
+SQLAlchemy==2.0.22
+marshmallow==3.20.1
+flask-marshmallow==0.15.0
+Flask-SQLAlchemy==3.1.1
+marshmallow-sqlalchemy==0.29.0

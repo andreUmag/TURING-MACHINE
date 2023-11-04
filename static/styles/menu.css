@@ -1,0 +1,70 @@
+.navbar{
+    position: absolute;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 90px;
+}
+
+.navbar a{
+    color: rgb(66, 56, 56);
+}
+
+.navbar .logo{
+    color: #383673;
+    font-size: 2em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-left: 10px; 
+}
+
+.navbar .logo p {
+    margin: 0;
+}
+
+.navbar .logo p.pila {
+    color: #7672F2;
+    font-size: 15px;
+    margin-left: 4px;
+    margin-top: 20px;
+}
+
+.navbar .nav-links ul{
+    display: flex;
+}
+
+.navbar .nav-links ul li{
+    margin:  0 25px;
+}
+
+.navbar .nav-links ul li a{
+    color: #7672F2;
+    font-weight: 600;
+}
+
+.language-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    max-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+}
+
+.language-dropdown ul {
+    flex-direction: column;
+}
+
+.language-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links{
+    display: block;
+}
