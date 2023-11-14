@@ -1,0 +1,13 @@
+{
+    "title": "プッシュダウンオートマトン",
+    "history": "履歴",
+    "languages": "言語",
+    "languages-option": {
+        "en": "英語",
+        "es": "スペイン語",
+        "jp": "日本語"
+    },
+    "word": "言葉",
+    "automaton": "オートマトン",
+    "pushdown": "プッシュダウン"
+}

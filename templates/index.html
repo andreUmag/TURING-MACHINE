@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Turing Machine</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/body.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/menu.css') }}">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='styles/slider.css') }}"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/input.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='assets/aire.ico') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='scripts/translations.js') }}"></script>
+    <script src="{{ url_for('static', filename='scripts/input.js') }}"></script>
+    <script src="{{ url_for('static', filename='scripts/button.js') }}"></script>
+    <script src="{{ url_for('static', filename='scripts/script.js') }}"></script>
+    <script src="{{ url_for('static', filename='scripts/go.js') }}"></script>
+  <!-- <script src="{{ url_for('static', filename='scripts/graf.js') }}"></script> -->
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">
+            <p id="automaton">Turing</p>
+            <p id="pushdown" class="pila">machine</p></a>
+
+            <div class="velocity">
+                <div class="range">
+                  <div class="sliderValue">
+                    <span>5</span>
+                  </div>
+                  <div class="field">
+                    <div class="value left">0.25</div>
+                    <input
+                      type="range"
+                      min="1"
+                      max="5"
+                      value="3"
+                      steps="1"
+                      id="inputSlider"
+                    />
+                    <div class="value right">2.0</div>
+                  </div>
+                </div>
+                </div>
+        <div class="nav-links">
+            
+            <ul>
+                <li id="history"><a href="#">History</a>
+                    <ul id="history_list">
+
+                    </ul>
+                </li>
+
+                <li id="languages" class="dropdown">
+                    <a href="#">Languages</a>
+                    <div id="language-dropdown" class="language-dropdown">
+                        <ul class="language-list">
+                            <li><a href="#" data-lang="en">English</a></li>
+                            <li><a href="#" data-lang="es">Spanish</a></li>
+                            <li><a href="#" data-lang="jp">Japanese</a></li>
+                        </ul>
+                    </div>
+                </li>                        
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div class="content">
+            <div class="ouput-values">
+                <div class="graf">
+                    <div id="sample">
+                        <div id="myDiagramDiv" style="border: solid 1px black; width: 100%; height: 320px; background: whitesmoke"></div>
+                          <textarea id="mySavedModel" hidden>
+                            { "class": "go.GraphLinksModel",
+                            "nodeKeyProperty": "id",
+                            "nodeDataArray": [
+                            {"id":-1, "loc":"-1000 50", "category":"op"},
+                            {"id":0, "loc":"-800 50", "text":"q0"},
+                            {"id":1, "loc":"-600 32", "text":"q1"},
+                            {"id":2, "loc":"-480 166", "text":"done", "category":"accept"}
+                            ],
+                            "linkDataArray": [
+                              { "from": -1, "to": 0, "text": "" },
+                              { "from": 0, "to": 0,  "text": "a,a→R" },
+                              { "from": 0, "to": 0,  "text": "b,a→R","category":"link1" },
+                              { "from": 0, "to": 1,  "text": "λ, →R" },
+                              { "from": 1, "to": 1,  "text": "a,a→R"},                    
+                              { "from": 1, "to": 1,  "text": "b,a→R","category":"link1" },
+                              { "from": 1, "to": 0,  "text": "λ, →R"},
+                              { "from": 0, "to": 2,  "text": "λ  →L","category":"link2"},
+                              { "from": 1, "to": 2,  "text": "λ  →L","category":"link3"}
+                            ]
+                          }
+                        </textarea>
+                        </div>
+                        <div id="divCanvas">
+                            <canvas id="canvas" width="1400px" height="150px" style="position: absolute; left: -16px;"></canvas>
+                            <canvas id="canvas3" width="1400px" height="150px" style="position: absolute; left: -16px; opacity: 0.5;"></canvas>
+                            <canvas id="canvas2" width="900px" height="150px" style="position: absolute; left: 325px;"></canvas>
+                          </div >
+                        <div id="myDiagramDiv" style="width: 200px; height: 100px;"></div>
+                        
+                </div>
+                
+            </div>
+            
+
+
+            <div class="input-values">
+                <div class="input-field">
+                    <input type="text" id="input-word" required />
+                    <label data-translate="word">Validate</label>
+                </div>
+                <div class="buttondiv">
+                    <button
+                      type="button"
+                      id="verificar"
+                      class="button"
+                      
+                    >
+                    Send
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+        
+    </header>
+    <script src="{{ url_for('static', filename='scripts/canvas.js') }}"></script>
+    <script src="{{ url_for('static', filename='scripts/canvas2.js') }}"></script>
+    <script src="{{ url_for('static', filename='scripts/codigo2.js') }}"></script>
+</body>
+</html>
