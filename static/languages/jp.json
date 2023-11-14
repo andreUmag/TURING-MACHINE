@@ -1,5 +1,5 @@
 {
-    "title": "プッシュダウンオートマトン",
+    "title": "チューリングマシン",
     "history": "履歴",
     "languages": "言語",
     "languages-option": {
@@ -8,6 +8,6 @@
         "jp": "日本語"
     },
     "word": "言葉",
-    "automaton": "オートマトン",
-    "pushdown": "プッシュダウン"
+    "turing": "チューリング",
+    "machine": "マシン"
 }

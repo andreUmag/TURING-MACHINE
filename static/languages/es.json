@@ -8,6 +8,6 @@
         "jp": "Japonés"
     },
     "word": "Validar",
-    "automaton": "Automata",
-    "pushdown": "pila"
+    "turing": "Turing",
+    "machine": "Maquina"
 }

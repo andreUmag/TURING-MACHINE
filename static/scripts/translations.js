@@ -10,8 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.querySelector('[data-translate="word"]').textContent = data.word;
                 document.querySelector('#history a').textContent = data.history;
                 document.querySelector('#languages a').textContent = data.languages;
-                document.querySelector('#automaton').textContent = data.automaton;
-                document.querySelector('#pushdown').textContent = data.pushdown;
+                document.querySelector('#turing').textContent = data.turing;
+                document.querySelector('#machine').textContent = data.machine;
 
                 const languageOptions = data["languages-option"];
                 document.querySelectorAll('.language-list a').forEach(link => {
