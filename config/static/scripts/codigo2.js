@@ -12,6 +12,7 @@ check.onclick = ()=>{
     position2 = -129;
     text = document.getElementById("input-word").value;
     tape(text);
+    
 
     let regExp = new RegExp("[abB ]+","g");
     regExp = regExp.exec(text);
